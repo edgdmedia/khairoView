@@ -1,0 +1,149 @@
+    {% include 'header.html' %}
+    <body class="app">
+        <!-- BEGIN: Mobile Menu -->
+        <div class="mobile-menu md:hidden">
+            <div class="mobile-menu-bar">
+                <a href="/" class="flex mr-auto">
+                    <img alt="khairo logo" class="w-6" src="{{url_for('static', path='dist/images/logo.svg')}}">
+                </a>
+                <a href="#" id="mobile-menu-toggler"> <i data-feather="bar-chart-2" class="w-8 h-8 text-white transform -rotate-90"></i> </a>
+            </div>
+            <ul class="border-t border-theme-24 py-5 hidden">
+                <li>
+                    <a href="/" class="menu menu--active">
+                        <div class="menu__icon"> <i data-feather="home"></i> </div>
+                        <div class="menu__title"> Dashboard</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/service" class="menu ">
+                        <div class="menu__icon"> <i data-feather="home"></i> </div>
+                        <div class="menu__title">service</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/plan" class="menu ">
+                        <div class="menu__icon"> <i data-feather="home"></i> </div>
+                        <div class="menu__title"> plan</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/appointment" class="menu ">
+                        <div class="menu__icon"> <i data-feather="home"></i> </div>
+                        <div class="menu__title">appointment</div>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- END: Mobile Menu -->
+        <div class="flex">
+            <!-- BEGIN: Side Menu -->
+            <nav class="side-nav">
+                <a href="/" class="intro-x flex items-center pl-5 pt-4">
+                    <img alt="Midone Tailwind HTML Admin Template" class="w-6" src="{{url_for('static', path='dist/images/logo.svg')}}">
+                    <span class="hidden xl:block text-white text-lg ml-3"> khairo </span>
+                </a>
+                <div class="side-nav__devider my-6"></div>
+                <ul>
+                    <li>
+                        <a href="/" class="side-menu side-menu--active">
+                            <div class="side-menu__icon"> <i data-feather="home"></i> </div>
+                            <div class="side-menu__title"> Dashboard </div>
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="/service" class="side-menu ">
+                            <div class="side-menu__icon"> <i data-feather="home"></i> </div>
+                            <div class="side-menu__title"> Service </div>
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="/plan" class="side-menu ">
+                            <div class="side-menu__icon"> <i data-feather="home"></i> </div>
+                            <div class="side-menu__title"> Plan</div>
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="/appointment" class="side-menu ">
+                            <div class="side-menu__icon"> <i data-feather="home"></i> </div>
+                            <div class="side-menu__title"> Appointment</div>
+                        </a>
+                    </li>
+                   
+                </ul>
+            </nav>
+            <!-- END: Side Menu -->
+            <!-- BEGIN: Content -->
+            <div class="content">
+                <!-- BEGIN: Top Bar -->
+
+               
+                <div class="top-bar flex justify-between">
+                    <!-- BEGIN: Breadcrumb -->
+                    <div class="-intro-x breadcrumb mr-auto hidden sm:flex"> <a href="" class="/">Application</a> <i data-feather="chevron-right" class="breadcrumb__icon"></i> <a href="/" class="breadcrumb--active">Dashboard</a> </div>
+                    <!-- END: Breadcrumb -->
+                    <!-- BEGIN: Search -->
+                   
+                    <div class="intro-x relative mr-3 sm:mr-6">
+                        <div class="search  sm:block">
+                            <input type="text" class="search__input input placeholder-theme-13" placeholder="Search...">
+                            <i data-feather="search" class="search__icon dark:text-gray-300"></i> 
+                        </div>
+                    </div>
+                   
+                    <!-- END: Search -->
+                   
+                    <!-- BEGIN: Account Menu -->
+                    <div class="intro-x dropdown w-8 h-8">
+                        <div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in">
+                            <img alt="Midone Tailwind HTML Admin Template" src="{{url_for('static', path='dist/images/profile-1.jpg')}}">
+                        </div>
+                        <div class="dropdown-box w-56">
+                            <div class="dropdown-box__content box bg-theme-38 dark:bg-dark-6 text-white">
+                                <div class="p-4 border-b border-theme-40 dark:border-dark-3">
+                                    <div class="font-medium">{{user.firstname}}</div>
+                                    <div class="text-xs text-theme-41 dark:text-gray-600">{%if user.admin%}Admin{%elif user.firstname %}User  {%else%}Not Logging{%endif%}</div>
+                                </div>
+                                <div class="p-2">
+                                    {% if user%}
+                                    <a href="/profile" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md"> <i data-feather="user" class="w-4 h-4 mr-2"></i> Profile </a>
+                                    <a href="/password/reset" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md"> <i data-feather="lock" class="w-4 h-4 mr-2"></i> Reset Password </a>
+                                    {%else%}
+                                    <a href="/login" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md"> <i data-feather="lock" class="w-4 h-4 mr-2"></i> Log in  </a>
+                                    <a href="/register" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md"> <i data-feather="lock" class="w-4 h-4 mr-2"></i> Register </a>
+                                    {%endif%}
+                                    <a href="/help" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md"> <i data-feather="help-circle" class="w-4 h-4 mr-2"></i> Help </a>
+                                </div>
+                                <div class="p-2 border-t border-theme-40 dark:border-dark-3">
+                                    {% if user%}
+                                    <a href="/logout" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md"> <i data-feather="toggle-right" class="w-4 h-4 mr-2"></i> Logout </a>
+                                    {%endif%}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END: Account Menu -->
+                </div>
+                  
+                
+               
+
+
+                    {%block content%}
+
+                    {%endblock%}
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END: Content -->
+        </div>
+      {% include 'footer.html' %}
+    </body>
+</html>
