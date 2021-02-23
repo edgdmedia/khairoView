@@ -46,7 +46,8 @@ async def login(response: Response, request:Request, email: Optional[str] = Form
                     response.set_cookie("user", value=json.dumps(data.json()), httponly=True)
                     return response
                 else:
-                    return template("pages/login.html", {"request": request, "error": json.dumps(data.json())})
+                    return template("pages/login.html", {"request": request, "error": data.json()})
+
         except:
             return template("pages/login.html",
                             {"request": request, 'error': json.dumps({'message': 'authorization failed, try again'})})
