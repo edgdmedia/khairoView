@@ -5,11 +5,12 @@ from starlette.exceptions import HTTPException as StarletteHTTPException
 from fastapi.templating import Jinja2Templates
 from khairo.view import appointment, index, plan, service
 from khairo.view.account import login, register, passwordManager, profile
+from khairo.settings import template
 
 app = FastAPI(debug=True)
 @app.exception_handler(StarletteHTTPException)
 async def custom_http_exception_handler(request, exc):
-    return RedirectResponse("/")
+    return RedirectResponse("/404", status_code=302)
 
 app.mount("/static", StaticFiles(directory="./khairo/static"), name="static")
 app.include_router(index.router)

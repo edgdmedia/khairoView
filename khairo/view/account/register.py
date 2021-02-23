@@ -27,4 +27,4 @@ async  def register(email:str = Form(...) , password:str = Form(...), confirmPas
         })
         if data.status_code == 201:
             return
-    print(data.status_code)
+

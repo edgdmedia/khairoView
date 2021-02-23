@@ -11,7 +11,7 @@ class ViewMixin(object):
         if data:
             user = json.loads(data)
             return user["user"]
-        return RedirectResponse("/login", status_code=status.HTTP_302_FOUND)
+        return None
 
     @staticmethod
     async  def get_user_details(request:Request):

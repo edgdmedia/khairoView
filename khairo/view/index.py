@@ -19,3 +19,7 @@ async def settings(request: Request, user:dict = Depends(ViewMixin.get_user)):
 @router.get('/help')
 async def service(request: Request, user:dict = Depends(ViewMixin.get_user_details)):
     return template('pages/contact.html', {'request': request, "user":user})
+
+@router.get("/404")
+async def errorpage(request:Request, user:dict = Depends(ViewMixin.get_user)):
+    return template("404.html", {"request": request, "user":user})
