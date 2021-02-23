@@ -1,1 +1,1 @@
-web: uvicorn khairo:app, worksers=4, --host=0.0.0.0 --port=${PORT:-5000}
+web: uvicorn khairo:app, --worksers=4 --host=0.0.0.0 --port=${PORT:-5000}
