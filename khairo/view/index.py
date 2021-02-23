@@ -9,9 +9,6 @@ router = APIRouter()
 async def index(request: Request, user:dict = Depends(ViewMixin.get_user_details)):
     return template("base.html", {"request": request, "user": user})
 
-@router.get('/service')
-async def service(request: Request, user:dict = Depends(ViewMixin.get_user_details)):
-    return template('pages/service.html', {'request': request, "user":user})
 
 
 @router.get('/settings')

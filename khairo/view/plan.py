@@ -6,5 +6,5 @@ router = APIRouter()
 
 
 @router.get('/plan')
-async def plan(request: Request, user:dict = Depends(ViewMixin.get_user_details) ):
+async def plan(request: Request, user:dict = Depends(ViewMixin.get_user) ):
     return template('pages/plan.html', {'request': request, "user":user["user"]})
