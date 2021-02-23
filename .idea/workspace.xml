@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="da17fac7-f7f1-4ea8-8e6f-6442fbd1f713" name="Default Changelist" comment="first commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +22,14 @@
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="12b4e850-0284-4cb4-89c5-255460d9e50d" />
@@ -199,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614040804492</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="changing">
+      <created>1614041249689</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1614041249689</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

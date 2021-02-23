@@ -2,7 +2,7 @@ from fastapi.requests import Request
 from fastapi.responses import Response
 from starlette.responses import RedirectResponse
 from fastapi import APIRouter, Form, status, Cookie
-from khairo  import template
+from khairo.settings import template
 from httpx import AsyncClient
 from typing import Optional
 from khairo.settings import API_WEBSITE_URL, WEBSITE_URL

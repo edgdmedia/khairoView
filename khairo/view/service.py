@@ -1,5 +1,5 @@
 from fastapi.requests import Request
-from khairo  import template
+from khairo.settings import template
 from fastapi import APIRouter
 
 router = APIRouter()

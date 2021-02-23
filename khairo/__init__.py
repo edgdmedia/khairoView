@@ -12,7 +12,6 @@ async def custom_http_exception_handler(request, exc):
     return RedirectResponse("/")
 
 app.mount("/static", StaticFiles(directory="./khairo/static"), name="static")
-template = Jinja2Templates(directory="./khairo/template").TemplateResponse
 app.include_router(index.router)
 app.include_router(plan.router)
 app.include_router(appointment.router)

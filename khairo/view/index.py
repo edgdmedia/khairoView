@@ -1,6 +1,6 @@
 from fastapi.requests import Request
 from fastapi import APIRouter, Depends
-from khairo import template
+from khairo.settings import template
 from khairo.view.constant.accessViewMixin import ViewMixin
 router = APIRouter()
 

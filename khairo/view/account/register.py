@@ -1,6 +1,6 @@
 from fastapi.requests import Request
 from fastapi import APIRouter, Form
-from khairo  import template
+from khairo.settings import template
 from httpx import AsyncClient
 from khairo.settings import  API_WEBSITE_URL,WEBSITE_URL
 router = APIRouter()
