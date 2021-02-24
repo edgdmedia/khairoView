@@ -106,8 +106,8 @@
                         <div class="dropdown-box w-56">
                             <div class="dropdown-box__content box bg-theme-38 dark:bg-dark-6 text-white">
                                 <div class="p-4 border-b border-theme-40 dark:border-dark-3">
-                                    <div class="font-medium">{{user.firstname}}</div>
-                                    <div class="text-xs text-theme-41 dark:text-gray-600">{%if user.admin%}Admin{%elif user.firstname %}User  {%else%}Not Logging{%endif%}</div>
+                                    <div class="font-medium">{{user.firstname}} {{user.lastname}}</div>
+                                    <div class="text-xs text-theme-41 dark:text-gray-600">{%if user.admin%}Admin{%elif user.dietician %}Dietician {%elif user.firstname%}User{%else%}Not Logging{%endif%}</div>
                                 </div>
                                 <div class="p-2">
                                     {% if user%}

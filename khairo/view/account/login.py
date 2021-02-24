@@ -18,9 +18,10 @@ async def login(request: Request):
     error = request.cookies.get("error")
     message = request.cookies.get("message")
     if error:
+        print(error)
         return template('pages/login.html', {"request": request, "error":json.loads(error)})
     elif message:
-        return template('pages/login.html', {"request": request, "message": json.loads(message)})
+        return template('pages/login.html', {"request": request, "message":json.loads(message)})
     return template('pages/login.html', {"request": request})
 
 
@@ -43,15 +44,18 @@ async def login(response: Response, request:Request, email: Optional[str] = Form
                                          json={"email": email, "password": password})
                 if data.status_code == 200:
                     response = RedirectResponse(url="/", status_code=status.HTTP_302_FOUND)
-                    response.set_cookie("user", value=json.dumps(data.json()), httponly=True)
+                    response.set_cookie("user", value=data.text, httponly=True)
                     return response
                 else:
-                    return template("pages/login.html", {"request": request, "error": data.json()})
+                    response = RedirectResponse("/login", status_code=302)
+                    response.set_cookie(key="error", value=data.text, max_age=1)
+                    return response
 
         except:
-            return template("pages/login.html",
-                            {"request": request, 'error': json.dumps({'message': 'authorization failed, try again'})})
-    response.set_cookie(key="error", value=json.dumps({'message':'Invalid details provided'}), expires=300)
+            response = RedirectResponse("/login", status_code=302)
+            response.set_cookie(key="error", value=json.dumps({'message': 'authorization failed, try again'}), max_age=1)
+            return response
+    response.set_cookie(key="error", value=json.dumps({'message':'Invalid details provided'}), max_age=1)
     return RedirectResponse("/login", status_code=status.HTTP_302_FOUND)
 
 

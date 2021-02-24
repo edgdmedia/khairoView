@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da17fac7-f7f1-4ea8-8e6f-6442fbd1f713" name="Default Changelist" comment="first commit">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="da17fac7-f7f1-4ea8-8e6f-6442fbd1f713" name="Default Changelist" comment="making changes to settings.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/khairo/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/khairo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/khairo/template/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/template/404.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/khairo/template/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/template/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/khairo/view/account/profile.py" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/view/account/profile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/template/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/template/pages/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/template/pages/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/template/pages/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/template/pages/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/template/pages/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/view/account/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/view/account/login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/khairo/view/account/register.py" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/view/account/register.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/khairo/view/appointment.py" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/view/appointment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/khairo/view/constant/accessViewMixin.py" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/view/constant/accessViewMixin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/khairo/view/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/view/index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/khairo/view/plan.py" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/view/plan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/khairo/view/service.py" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/view/service.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +52,6 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -309,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614044573939</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="making changes to settings.py">
+      <created>1614120326818</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1614120326819</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -333,6 +333,7 @@
     <MESSAGE value="hello" />
     <MESSAGE value="first commit" />
     <MESSAGE value="changing" />
-    <option name="LAST_COMMIT_MESSAGE" value="changing" />
+    <MESSAGE value="making changes to settings.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="making changes to settings.py" />
   </component>
 </project>

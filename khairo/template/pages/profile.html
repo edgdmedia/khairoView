@@ -16,7 +16,7 @@
                     <div class="relative flex items-center p-5">
                         <div class="ml-4 mr-auto">
                             <div class="font-medium text-base">{{user.firstname}}</div>
-                            <div class="text-gray-600">Backend Engineer</div>
+                            <div class="text-gray-600">{%if user.admin%}Admin{%elif user.active%}User{%endif%}</div>
                         </div>
                         <div class="dropdown">
                             <a class="dropdown-toggle w-5 h-5 block" href="javascript:;"> <i
@@ -127,8 +127,10 @@
                                         </div>
                                     </div>
                                     <button type="submit" class="button w-20 bg-theme-1 text-white mt-3">Save</button>
-                        
+                                </div>
+                            </div>
                         </form>
+
                             </div>
                         </div>
                     </div>
