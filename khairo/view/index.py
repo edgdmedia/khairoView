@@ -7,7 +7,9 @@ router = APIRouter()
 
 @router.get("/")
 async def index(request: Request, user:dict = Depends(ViewMixin.get_user_details)):
-    return template("base.html", {"request": request, "user": user})
+    if user:
+        return template("base.html", {"request": request, "user": user})
+    return template("pages/login.html", {"request": request, "user": user}, status_code=302)
 
 
 

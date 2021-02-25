@@ -18,7 +18,6 @@ async def login(request: Request):
     error = request.cookies.get("error")
     message = request.cookies.get("message")
     if error:
-        print(error)
         return template('pages/login.html', {"request": request, "error":json.loads(error)})
     elif message:
         return template('pages/login.html', {"request": request, "message":json.loads(message)})
