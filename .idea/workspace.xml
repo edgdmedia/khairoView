@@ -2,9 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da17fac7-f7f1-4ea8-8e6f-6442fbd1f713" name="Default Changelist" comment="Authentication completed">
+      <change afterPath="$PROJECT_DIR$/khairo/static/dist/css/component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/khairo/template/component/service.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/khairo/template/component/single-service.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/khairo/template/pages/account/admin/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/khairo/template/pages/account/admin/admin_profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/khairo/template/pages/account/admin/dietitian_profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/khairo/template/pages/appointment/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/khairo/template/pages/base/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/khairo/template/pages/generalView/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/khairo/template/pages/plan/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/khairo/template/pages/plan/plan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/khairo/template/pages/service/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/khairo/view/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/khairo/view/account/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/khairo/view/admin/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/khairo/view/admin/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/khairo/view/admin/dietitian.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/khairo/view/appointment/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/khairo/view/constant/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/khairo/view/generalView/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/khairo/view/model/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/khairo/view/plan/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/khairo/view/service/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/khairo/view/service/service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/template/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/template/pages/generalView/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/template/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/template/pages/base/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/template/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/template/pages/base/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/template/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/template/pages/base/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/template/pages/appointment.html" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/template/pages/appointment/appointment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/template/pages/change-password.html" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/template/pages/account/change-password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/template/pages/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/template/pages/generalView/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/template/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/template/pages/account/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/template/pages/password-reset.html" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/template/pages/account/password-reset.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/template/pages/plan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/template/pages/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/template/pages/account/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/template/pages/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/template/pages/account/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/template/pages/service.html" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/template/pages/service/service.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/template/pages/settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/template/pages/account/settings.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/khairo/view/account/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/view/account/login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/khairo/view/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/view/index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/view/account/passwordManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/view/account/passwordManager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/view/account/profile.py" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/view/account/profile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/view/account/register.py" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/view/account/register.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/view/appointment.py" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/view/appointment/appointment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/view/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/view/generalView/index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/view/plan.py" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/view/plan/plan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/view/service.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +60,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -49,7 +95,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet" />
+    <property name="settings.editor.splitter.proportion" value="0.3228106" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\owoni\PycharmProjects\khairoView\khairo\template\component" />
+      <recent name="C:\Users\owoni\PycharmProjects\khairoView\khairo\template\pages\account\admin" />
+      <recent name="C:\Users\owoni\PycharmProjects\khairoView\khairo\view\service" />
+      <recent name="C:\Users\owoni\PycharmProjects\khairoView\khairo\view" />
+      <recent name="C:\Users\owoni\PycharmProjects\khairoView\khairo\view\generalView\appointment" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -333,7 +389,21 @@
       <option name="project" value="LOCAL" />
       <updated>1614264962652</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Authentication completed">
+      <created>1614265906787</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1614265906787</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Authentication completed">
+      <created>1614265940647</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1614265940647</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

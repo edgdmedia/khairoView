@@ -1,0 +1,37 @@
+{%extends './pages/base/base.html'%}
+
+{%block content%}
+{%if service.service %}
+<div class="grid md:grid-cols-2 gap-3 overflow-auto"  >
+ {%for service in service.service%}
+ <div class="md:flex sm:bg-blue-300 shadow-lg  mx-6 md:mx-auto md:my-2 max-w-lg md:max-w-2xl h-64" id="service-card">
+   <img class="h-full w-full md:w-1/3  object-cover " src="{{service.cover_img}}" alt="{{service.name}}">
+   <div class="w-full md:w-2/3 px-4 py-4 bg-white ">
+      <div class="flex items-center">
+         <h2 class="text-xl text-gray-800 font-medium mr-auto uppercase">{{service.name}}</h2>
+         <p class="text-gray-800 font-semibold tracking-tighter">
+
+            <i class="text-gray-600 font-black"> ₦{{service.price}}</i>
+
+         </p>
+      </div>
+    <div class="w-full md:w-1/2">
+          <p class="text-sm text-gray-700 mt-4 truncate break-all">
+         {{service.description}}
+
+      </p>
+    </div>
+      <div class="flex items-center justify-end mt-4 top-auto">
+       {%if user.admin%}
+         <button class="bg-white text-red-500 px-4 py-2 rounded mr-auto hover:underline">Delete</button>
+         <button class=" bg-gray-200 text-blue-600 px-2 py-2 rounded-md mr-2">Edit</button>
+       {%endif%}
+         <button class=" bg-blue-600 text-gray-200 px-2 py-2 rounded-md ">view</button>
+      </div>
+   </div>
+</div>
+ {%endfor%}
+</div>
+{%endif%}
+{%endblock%}
+

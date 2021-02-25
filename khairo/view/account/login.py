@@ -6,25 +6,22 @@ from khairo.settings import template
 from khairo.settings import API_WEBSITE_URL
 from typing import Optional
 import json
-
-
-
-router = APIRouter()
 from httpx import AsyncClient
 
 
-@router.get("/login")
+account_router = APIRouter()
+@account_router.get("/login")
 async def login(request: Request):
     error = request.cookies.get("error")
     message = request.cookies.get("message")
     if error:
-        return template('pages/login.html', {"request": request, "error":json.loads(error)})
+        return template('pages/account/login.html', {"request": request, "error":json.loads(error)})
     elif message:
-        return template('pages/login.html', {"request": request, "message":json.loads(message)})
-    return template('pages/login.html', {"request": request})
+        return template('pages/account/login.html', {"request": request, "message":json.loads(message)})
+    return template('pages/account/login.html', {"request": request})
 
 
-@router.get("/logout")
+@account_router.get("/logout")
 async  def Logout(response:Response)->RedirectResponse:
     response  = RedirectResponse("/", status_code=status.HTTP_302_FOUND)
     response.delete_cookie("user")
@@ -33,7 +30,7 @@ async  def Logout(response:Response)->RedirectResponse:
 
 
 
-@router.post("/login")
+@account_router.post("/login")
 async def login(response: Response, request:Request, email: Optional[str] = Form(...),
                 password: Optional[str] = Form(...))->RedirectResponse:
     if email and password:

@@ -1,22 +1,23 @@
 from fastapi.requests import Request
-from fastapi import APIRouter, Form
+from fastapi import  Form, Depends
 from khairo.settings import template
 from fastapi.responses import RedirectResponse, Response
+from khairo.view.constant.accessViewMixin import ViewMixin
 from httpx import AsyncClient
 from khairo.settings import  API_WEBSITE_URL,WEBSITE_URL
+from khairo.view.account.login import account_router
 import json
-router = APIRouter()
 
-
-
-@router.get("/register")
-async def register(request: Request):
+@account_router.get("/register")
+async def register(request: Request, user:dict = Depends(ViewMixin.get_user)):
+    if user:
+        return RedirectResponse("/", status_code=302)
     error = request.cookies.get("error")
     if error:
-        return template('pages/register.html', {"request": request, "error":json.loads(error)})
-    return template('pages/register.html', {"request": request})
+        return template('pages/account/register.html', {"request": request, "error":json.loads(error)})
+    return template('pages/account/register.html', {"request": request})
 
-@router.post("/register")
+@account_router.post("/register")
 async  def register(response:Response, email:str = Form(...) , password:str = Form(...), confirmPassword:str= Form(...),
                     gender:str= Form(...), phoneNo:str= Form(...),
                     firstname:str= Form(...), lastname:str= Form(...)):
@@ -39,7 +40,7 @@ async  def register(response:Response, email:str = Form(...) , password:str = Fo
         response.set_cookie(key="error", value=data.text, max_age=1)
         return response
 
-@router.get("/{userId}/verify")
+@account_router.get("/{userId}/verify")
 async def verify_email(userId:str, response:Response):
      async with AsyncClient() as client:
          data = await client.post(f"{API_WEBSITE_URL}/user/{userId}/activate")

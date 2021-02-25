@@ -1,4 +1,4 @@
-{%extends './base.html'%}
+{%extends './pages/base/base.html'%}
 {%block content%}
 <div class="app">
     {% if user%}
@@ -6,7 +6,7 @@
     <div class="content">
         <div class="intro-y flex items-center mt-8">
             <h2 class="text-lg font-medium mr-auto">
-                Update Profile
+
             </h2>
         </div>
         <div class="grid grid-cols-12 gap-6">
@@ -16,7 +16,7 @@
                     <div class="relative flex items-center p-5">
                         <div class="ml-4 mr-auto">
                             <div class="font-medium text-base">{{user.firstname}} {{user.lastname}}</div>
-                            <div class="text-gray-600">{%if user.admin%}Admin{%elif user.dietician%}Dietician{%else%}User{%endif%}</div>
+                            <div class="text-gray-600">{%if user.admin%}Admin{%elif user.dietitian%}Dietitian{%else%}User{%endif%}</div>
                         </div>
 
                     </div>

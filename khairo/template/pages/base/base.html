@@ -1,4 +1,4 @@
-    {% include 'header.html' %}
+    {% include './pages/base/header.html' %}
     <body class="app">
         <!-- BEGIN: Mobile Menu -->
         <div class="mobile-menu md:hidden">
@@ -107,7 +107,7 @@
                             <div class="dropdown-box__content box bg-theme-38 dark:bg-dark-6 text-white">
                                 <div class="p-4 border-b border-theme-40 dark:border-dark-3">
                                     <div class="font-medium">{{user.firstname}} {{user.lastname}}</div>
-                                    <div class="text-xs text-theme-41 dark:text-gray-600">{%if user.admin%}Admin{%elif user.dietician %}Dietician {%elif user.firstname%}User{%else%}Not Logging{%endif%}</div>
+                                    <div class="text-xs text-theme-41 dark:text-gray-600">{%if user.admin%}Admin{%elif user.dietitian %}Dietitian {%elif user.firstname%}User{%else%}Not Logging{%endif%}</div>
                                 </div>
                                 <div class="p-2">
                                     {% if user%}
@@ -121,7 +121,7 @@
                                 </div>
                                 <div class="p-2 border-t border-theme-40 dark:border-dark-3">
                                     {% if user%}
-                                    <a href="/logout" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md"> <i data-feather="toggle-right" class="w-4 h-4 mr-2"></i> Logout </a>
+                                    <a href="/logout" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <i data-feather="toggle-right" class="w-4 h-4 mr-2"></i> Logout </a>
                                     {%endif%}
                                 </div>
                             </div>
@@ -129,9 +129,9 @@
                     </div>
                     <!-- END: Account Menu -->
                 </div>
-                  
-                
-               
+
+
+
 
 
                     {%block content%}
@@ -145,6 +145,6 @@
             </div>
             <!-- END: Content -->
         </div>
-      {% include 'footer.html' %}
+      {% include './pages/base/footer.html' %}
     </body>
 </html>

@@ -1,26 +1,26 @@
 from fastapi.requests import Request
 from fastapi.responses import Response
 from starlette.responses import RedirectResponse
-from fastapi import APIRouter, Form, status, Cookie
+from fastapi import APIRouter, Form, status
 from khairo.settings import template
+from khairo.view.account.login import account_router
 from httpx import AsyncClient
 from typing import Optional
 from khairo.settings import API_WEBSITE_URL, WEBSITE_URL
 import  json
 
-router = APIRouter()
 
-@router.get('/password/reset')
+@account_router.get('/password/reset')
 async def password_reset(request: Request):
     error = request.cookies.get("error", None)
     message = request.cookies.get("message", None)
     if error:
-        return template('pages/change-password.html', {'request': request, "error":json.loads(error)})
+        return template('pages/account/change-password.html', {'request': request, "error":json.loads(error)})
     elif message:
-        return template('pages/change-password.html', {'request': request, "message":json.loads(message)})
-    return template('pages/change-password.html', {'request': request})
+        return template('pages/account/change-password.html', {'request': request, "message":json.loads(message)})
+    return template('pages/account/change-password.html', {'request': request})
 
-@router.post("/password/reset", response_class=RedirectResponse,)
+@account_router.post("/password/reset", response_class=RedirectResponse, )
 async  def password_reset( response:Response, email:Optional[str] = Form(...)) -> RedirectResponse:
 
     if email:
@@ -47,15 +47,15 @@ async  def password_reset( response:Response, email:Optional[str] = Form(...)) -
 
 
 
-@router.get("/password/change/{userId}")
+@account_router.get("/password/change/{userId}")
 async def changePassword(request: Request, userId:str):
     error = request.cookies.get("error")
     if error:
-       return template('pages/password-reset.html', {'request': request, "userId":userId, "error":json.loads(error)})
-    return template('pages/password-reset.html', {'request': request, "userId": userId})
+       return template('pages/account/password-reset.html', {'request': request, "userId":userId, "error":json.loads(error)})
+    return template('pages/account/password-reset.html', {'request': request, "userId": userId})
 
 
-@router.post("/password/change")
+@account_router.post("/password/change")
 async  def ChangePassword(password:Optional[str] = Form(...),
         confirmPassword:Optional[str] = Form(...), userId:Optional[str]= Form(...)) ->RedirectResponse:
     if password and confirmPassword and userId:
