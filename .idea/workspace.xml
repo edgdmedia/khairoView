@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da17fac7-f7f1-4ea8-8e6f-6442fbd1f713" name="Default Changelist" comment="Authentication completed">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/khairo/view/account/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/view/account/login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/khairo/view/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/view/index.py" afterDir="false" />
-    </list>
+    <list default="true" id="da17fac7-f7f1-4ea8-8e6f-6442fbd1f713" name="Default Changelist" comment="Authentication completed" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -333,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614264962652</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Authentication completed">
+      <created>1614265906787</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1614265906787</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
