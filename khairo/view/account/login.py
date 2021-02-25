@@ -1,6 +1,6 @@
 from fastapi.requests import Request
 from fastapi.responses import Response
-from starlette.responses import RedirectResponse
+from fastapi.responses import RedirectResponse
 from fastapi import APIRouter, Form, status
 from khairo.settings import template
 from khairo.settings import API_WEBSITE_URL
