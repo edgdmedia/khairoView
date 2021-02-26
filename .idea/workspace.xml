@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="da17fac7-f7f1-4ea8-8e6f-6442fbd1f713" name="Default Changelist" comment="making changes to settings">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/khairo/static/dist/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/static/dist/css/app.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -360,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614345868881</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="making changes to settings">
+      <created>1614346634814</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1614346634814</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="UnknownFeatures">
