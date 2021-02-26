@@ -8443,6 +8443,10 @@ html body {
   .side-nav {
     display: none;
   }
+
+ #service-card{
+ margin-bottom:13rem;
+ }
 }
 
 .side-nav.side-nav--simple {
