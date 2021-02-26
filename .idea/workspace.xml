@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da17fac7-f7f1-4ea8-8e6f-6442fbd1f713" name="Default Changelist" comment="Authentication completed">
-      <change beforePath="$PROJECT_DIR$/khairo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/view/account/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/view/account/login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khairo/view/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/khairo/view/index.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,8 +14,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -47,17 +49,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet" />
-    <property name="settings.editor.splitter.proportion" value="0.3228106" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\owoni\PycharmProjects\khairoView\khairo\template\component" />
-      <recent name="C:\Users\owoni\PycharmProjects\khairoView\khairo\template\pages\account\admin" />
-      <recent name="C:\Users\owoni\PycharmProjects\khairoView\khairo\view\service" />
-      <recent name="C:\Users\owoni\PycharmProjects\khairoView\khairo\view" />
-      <recent name="C:\Users\owoni\PycharmProjects\khairoView\khairo\view\generalView\appointment" />
-    </key>
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -341,28 +333,7 @@
       <option name="project" value="LOCAL" />
       <updated>1614264962652</updated>
     </task>
-    <task id="LOCAL-00040" summary="Authentication completed">
-      <created>1614265906787</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1614265906787</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Authentication completed">
-      <created>1614265940647</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1614265940647</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Authentication completed">
-      <created>1614311328179</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1614311328179</updated>
-    </task>
-    <option name="localTasksCounter" value="43" />
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -387,7 +358,6 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="changing" />
     <MESSAGE value="making changes to settings.py" />
-    <MESSAGE value="creating service page" />
     <MESSAGE value="Authentication completed" />
     <option name="LAST_COMMIT_MESSAGE" value="Authentication completed" />
   </component>
