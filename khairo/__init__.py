@@ -4,7 +4,8 @@ from fastapi.responses import RedirectResponse
 from starlette.exceptions import HTTPException as StarletteHTTPException
 from khairo.view.generalView import index
 from khairo.view.service import service
-from khairo.view import appointment, plan
+from khairo.view.plan import plan
+from khairo.view.appointment import appointment
 from khairo.view.account import  login, register, profile, passwordManager
 from khairo.settings import template
 
